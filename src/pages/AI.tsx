@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Sparkles, MessageCircle, Send, Bot } from 'lucide-react'
+import { Sparkles, Send, Bot } from 'lucide-react'
 import { GlassCard } from '../components/GlassCard'
 import { useState } from 'react'
 

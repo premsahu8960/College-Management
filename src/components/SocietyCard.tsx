@@ -1,7 +1,6 @@
 import { motion, useMotionValue, useSpring } from 'framer-motion'
 import { Users, MapPin } from 'lucide-react'
 import { GlassCard } from './GlassCard'
-import { useState } from 'react'
 
 interface SocietyCardProps {
   id: number
@@ -14,8 +13,6 @@ interface SocietyCardProps {
 }
 
 export const SocietyCard = ({ name, description, members, category, location }: SocietyCardProps) => {
-  const [isHovered, setIsHovered] = useState(false)
-  
   const x = useMotionValue(0)
   const y = useMotionValue(0)
   
@@ -38,7 +35,6 @@ export const SocietyCard = ({ name, description, members, category, location }: 
   }
 
   const handleMouseLeave = () => {
-    setIsHovered(false)
     rotateX.set(0)
     rotateY.set(0)
   }
@@ -48,8 +44,7 @@ export const SocietyCard = ({ name, description, members, category, location }: 
       className="perspective-1000"
       style={{ perspective: '1000px' }}
       onMouseMove={handleMouseMove}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={handleMouseLeave}
+  onMouseLeave={handleMouseLeave}
     >
       <motion.div
         style={{
