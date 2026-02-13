@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # College Society Management System
 
 A premium SaaS frontend application built with React + Vite + TypeScript for managing college societies and events.
@@ -59,3 +60,6 @@ src/
 - **Colors**: Neon cyan (#00f5ff) and purple (#a855f7)
 - **Font**: Inter (via Google Fonts)
 - **Shadows**: Soft shadows with hover glows
+=======
+# prem_website
+>>>>>>> e5fbebfc482aee853803dc1c095abee412b76401
